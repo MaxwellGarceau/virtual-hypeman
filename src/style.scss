@@ -1,0 +1,65 @@
+// Variables
+$hype-btn-pad-tpbtm: 100px;
+$hype-btn-pad-lr: 50px;
+
+@font-face {
+  font-family: 'graffiti-treat';
+  src:  url('graffiti-treat.otf') format('opentype'),
+}
+
+body {
+    text-align: center;
+    background-image: url('http://www.augmentedart.com/wp-content/uploads/2017/04/DJ_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 4000px;
+    background-position: fixed;
+    color: white;
+}
+
+h1 {
+	font-family: 'graffiti-treat', 'Arial';
+    font-size: 6em;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+
+}
+
+button:focus {
+    outline: none;
+}
+
+.selector-button {
+	font-size: 2em;
+	border-radius: 20px;
+	margin-top: 15px;
+}
+
+.hype-button {
+    font-size: 3em; //font-size: 6vmax;	
+    padding: $hype-btn-pad-tpbtm $hype-btn-pad-lr;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;  
+    border-style: none;  
+}
+
+@media (max-width: 450px) {
+    h1 {
+    font-size: 8em;
+    } 
+.hype-button {
+    font-size: 6em; //font-size: 6vmax; 
+    padding: 170px $hype-btn-pad-lr;
+    }   
+.selector-button {
+    font-size: 2em;
+    margin-top: 15px;
+    }    
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'graffiti-treat';
+  src: url("graffiti-treat.otf") format("opentype"); }
+body {
+  text-align: center;
+  background-image: url("http://www.augmentedart.com/wp-content/uploads/2017/04/DJ_2.jpg");
+  background-repeat: no-repeat;
+  background-size: 4000px;
+  background-position: fixed;
+  color: white; }
+
+h1 {
+  font-family: 'graffiti-treat', 'Arial';
+  font-size: 6em; }
+
+h4 {
+  font-style: italic;
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive; }
+
+button:focus {
+  outline: none; }
+
+.selector-button {
+  font-size: 2em;
+  border-radius: 20px;
+  margin-top: 15px; }
+
+.hype-button {
+  font-size: 3em;
+  padding: 100px 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border-style: none; }
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 8em; }
+
+  .hype-button {
+    font-size: 6em;
+    padding: 170px 50px; }
+
+  .selector-button {
+    font-size: 2em;
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
