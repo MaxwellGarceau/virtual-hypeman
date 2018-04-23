@@ -3,10 +3,8 @@
   src: url("graffiti-treat.otf") format("opentype"); }
 body {
   text-align: center;
-  background-image: url("http://www.augmentedart.com/wp-content/uploads/2017/04/DJ_2.jpg");
+  background-image: url("../images/background-one.jpg");
   background-repeat: no-repeat;
-  background-size: 4000px;
-  background-position: fixed;
   color: white; }
 
 h1 {
@@ -22,28 +20,61 @@ button:focus {
   outline: none; }
 
 .selector-button {
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: 20px;
-  margin-top: 15px; }
+  margin: 15px 5px;
+  width: 300px;
+  height: 75px; }
+
+.hype-button-div {
+  display: table;
+  margin: auto;
+  width: 100%; }
 
 .hype-button {
-  font-size: 3em;
-  padding: 100px 50px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2.4em;
   background-color: black;
   color: white;
   border-radius: 50%;
-  border-style: none; }
+  border-style: none;
+  width: 350px;
+  height: 250px; }
+
+.container {
+  width: 100%;
+  display: table; }
 
 @media (max-width: 450px) {
   h1 {
-    font-size: 8em; }
+    font-size: 4em;
+    margin: 0 0 10px 0; }
+
+  h4 {
+    font-size: 1.5em;
+    margin: 0 0 20px 0; }
+
+  .hype-button-div {
+    display: table;
+    margin: auto; }
 
   .hype-button {
-    font-size: 6em;
-    padding: 170px 50px; }
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.5em; }
+
+  .hype-button--center {
+    display: table-cell; }
 
   .selector-button {
-    font-size: 2em;
-    margin-top: 15px; } }
+    font-size: 1em;
+    margin: 15px 5px;
+    width: 140px;
+    height: 90px; }
+
+  .row {
+    display: table-cell;
+    vertical-align: middle; } }
 
 /*# sourceMappingURL=style.css.map */

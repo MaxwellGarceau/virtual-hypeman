@@ -31,10 +31,16 @@ class Layout extends React.Component {
 			<h1>Virtual Hypeman</h1>
 			<h4>For when you need that extra backup</h4>
 			<Hypebutton content={this.state.content} name={this.state.name} />
+			<div className="container">
+			<div className="row">
 			<Selectorbutton content="OHHHHH!!!!" name="oHHAudio" handleBtnSetState={this.handleBtnSetState} />
 			<Selectorbutton content="Noice ;)" name="noiceAudio" handleBtnSetState={this.handleBtnSetState} />
+			</div>
+			<div className="row">
 			<Selectorbutton content="That's What SHE Said" name="thatsWhatSheSaidAudio" handleBtnSetState={this.handleBtnSetState} />
-			<Selectorbutton content="Awkward..." name="awkwardAudio" handleBtnSetState={this.handleBtnSetState} />									
+			<Selectorbutton content="(Crickets)" name="cricketsAudio" handleBtnSetState={this.handleBtnSetState} />		
+			</div>
+			</div>							
 			<Audio />
 			</div>
 		);
@@ -57,7 +63,7 @@ class Hypebutton extends React.Component {
 	}
 	render() {
 		return (
-		<div>
+		<div className="hype-button-div">
 			<button className="hype-button" name={this.props.name} onClick={this.soundOhh}>{this.props.content}</button>			
 		</div>
 		);
@@ -86,10 +92,10 @@ class Audio extends React.Component {
 	render() {
 		return (
 			<div>
-			<audio id="oHHAudio" src="https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0"></audio>
-			<audio id="noiceAudio" src="https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0"></audio>
-			<audio id="thatsWhatSheSaidAudio" src="https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0"></audio>
-			<audio id="awkwardAudio" src="https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0"></audio>
+			<audio id="oHHAudio" src="../audio/ohhhh.mp3"></audio>
+			<audio id="noiceAudio" src="../audio/noice.mp3"></audio>
+			<audio id="thatsWhatSheSaidAudio" src="../audio/thats-what-she-said.mp3"></audio>
+			<audio id="cricketsAudio" src="../audio/crickets.mp3"></audio>
 			</div>
 		);
 	}

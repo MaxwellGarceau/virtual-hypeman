@@ -62,10 +62,22 @@ var Layout = function (_React$Component) {
 					"For when you need that extra backup"
 				),
 				React.createElement(Hypebutton, { content: this.state.content, name: this.state.name }),
-				React.createElement(Selectorbutton, { content: "OHHHHH!!!!", name: "oHHAudio", handleBtnSetState: this.handleBtnSetState }),
-				React.createElement(Selectorbutton, { content: "Noice ;)", name: "noiceAudio", handleBtnSetState: this.handleBtnSetState }),
-				React.createElement(Selectorbutton, { content: "That's What SHE Said", name: "thatsWhatSheSaidAudio", handleBtnSetState: this.handleBtnSetState }),
-				React.createElement(Selectorbutton, { content: "Awkward...", name: "awkwardAudio", handleBtnSetState: this.handleBtnSetState }),
+				React.createElement(
+					"div",
+					{ className: "container" },
+					React.createElement(
+						"div",
+						{ className: "row" },
+						React.createElement(Selectorbutton, { content: "OHHHHH!!!!", name: "oHHAudio", handleBtnSetState: this.handleBtnSetState }),
+						React.createElement(Selectorbutton, { content: "Noice ;)", name: "noiceAudio", handleBtnSetState: this.handleBtnSetState })
+					),
+					React.createElement(
+						"div",
+						{ className: "row" },
+						React.createElement(Selectorbutton, { content: "That's What SHE Said", name: "thatsWhatSheSaidAudio", handleBtnSetState: this.handleBtnSetState }),
+						React.createElement(Selectorbutton, { content: "(Crickets)", name: "cricketsAudio", handleBtnSetState: this.handleBtnSetState })
+					)
+				),
 				React.createElement(Audio, null)
 			);
 		}
@@ -103,7 +115,7 @@ var Hypebutton = function (_React$Component2) {
 		value: function render() {
 			return React.createElement(
 				"div",
-				null,
+				{ className: "hype-button-div" },
 				React.createElement(
 					"button",
 					{ className: "hype-button", name: this.props.name, onClick: this.soundOhh },
@@ -167,10 +179,10 @@ var Audio = function (_React$Component4) {
 			return React.createElement(
 				"div",
 				null,
-				React.createElement("audio", { id: "oHHAudio", src: "https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0" }),
-				React.createElement("audio", { id: "noiceAudio", src: "https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0" }),
-				React.createElement("audio", { id: "thatsWhatSheSaidAudio", src: "https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0" }),
-				React.createElement("audio", { id: "awkwardAudio", src: "https://dl.dropboxusercontent.com/s/yq21viippn88pyx/OHHVHype.mp3?dl=0" })
+				React.createElement("audio", { id: "oHHAudio", src: "../audio/ohhhh.mp3" }),
+				React.createElement("audio", { id: "noiceAudio", src: "../audio/noice.mp3" }),
+				React.createElement("audio", { id: "thatsWhatSheSaidAudio", src: "../audio/thats-what-she-said.mp3" }),
+				React.createElement("audio", { id: "cricketsAudio", src: "../audio/crickets.mp3" })
 			);
 		}
 	}]);
